@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2055CA89-96D5-42A8-A450-83F71B389558}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnalysisUK.Tinamous.Media.Messaging</RootNamespace>
+    <AssemblyName>AnalysisUK.Tinamous.Media.Messaging</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnalysisUK.Tinamous.Messaging.Common, Version=1.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AnalysisUK.Tinamous.Messaging.Common.1.1.0.10\lib\netstandard2.0\AnalysisUK.Tinamous.Messaging.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedAssemblyVersionInfo.cs">
+      <Link>Properties\SharedAssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Dtos\MediaItemDto.cs" />
+    <Compile Include="Dtos\MediaItemStorageLocationDto.cs" />
+    <Compile Include="Dtos\MediaItemType.cs" />
+    <Compile Include="Events\AddMediaItemRequestEvent.cs" />
+    <Compile Include="Events\CreateImageRequestEvent.cs" />
+    <Compile Include="Events\INewMediaItemEvent.cs" />
+    <Compile Include="Events\MediaItemDeletedEvent.cs" />
+    <Compile Include="Events\MediaItemProcessedEvent.cs" />
+    <Compile Include="Events\MediaItemTaggedEvent.cs" />
+    <Compile Include="Events\NewAudioEvent.cs" />
+    <Compile Include="Events\NewImageEvent.cs" />
+    <Compile Include="Events\NewVideoEvent.cs" />
+    <Compile Include="Events\ProcessMediaItemRequestEvent.cs" />
+    <Compile Include="Events\PurgeOldMediaRequestEvent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\DeleteMediaItemRequest.cs" />
+    <Compile Include="Requests\DeleteMediaItemResponse.cs" />
+    <Compile Include="Requests\GetLatestMediaItemRequest.cs" />
+    <Compile Include="Requests\GetLatestMediaItemResponse.cs" />
+    <Compile Include="Requests\GetMediaItemByIdRequest.cs" />
+    <Compile Include="Requests\GetMediaItemByIdResponse.cs" />
+    <Compile Include="Requests\GetMediaItemsByUniqueNameRequest.cs" />
+    <Compile Include="Requests\GetMediaItemsByUniqueNameResponse.cs" />
+    <Compile Include="Requests\GetMediaItemsByUserRequest.cs" />
+    <Compile Include="Requests\GetMediaItemsByUserResponse.cs" />
+    <Compile Include="Requests\GetMediaItemsRequest.cs" />
+    <Compile Include="Requests\GetMediaItemsResponse.cs" />
+    <Compile Include="Requests\GetUniqueNamesRequest.cs" />
+    <Compile Include="Requests\GetUniqueNamesResponse.cs" />
+    <Compile Include="Requests\TagMediaItemRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
