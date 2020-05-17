@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{DECFCF89-7ADA-46CD-B700-A7B03E816B30}"
 EndProject
@@ -30,8 +30,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisUK.Tinamous.Media.Domain.IntegrationTests", "AnalysisUK.Tinamous.Media.Domain.IntegrationTests\AnalysisUK.Tinamous.Media.Domain.IntegrationTests.csproj", "{5AD2254C-0B5F-4CC6-BC78-E300B4C4AFDA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{0684AF4A-A2F6-42C2-9ED9-CC68349A72A7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisUK.Tinamous.Media.Messaging", "AnalysisUK.Tinamous.Media.Messaging\AnalysisUK.Tinamous.Media.Messaging.csproj", "{2055CA89-96D5-42A8-A450-83F71B389558}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{83558D05-0246-41D7-8E1C-18EB78CFC71B}"
 EndProject
@@ -62,6 +60,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisUK.Tinamous.Media.DataAccess.Aws", "AnalysisUK.Tinamous.Media.DataAccess.Aws\AnalysisUK.Tinamous.Media.DataAccess.Aws.csproj", "{07E27C4C-5C13-45E1-9547-EAB2B6A56658}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisUK.Tinamous.Media.DataAccess.Aws.IntegrationTests", "AnalysisUK.Tinamous.Media.DataAccess.Aws.IntegrationTests\AnalysisUK.Tinamous.Media.DataAccess.Aws.IntegrationTests.csproj", "{A36FC698-67F6-405B-A411-01C4089807AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalysisUK.Tinamous.Media.Messaging", "AnalysisUK.Tinamous.Media.Messaging\AnalysisUK.Tinamous.Media.Messaging.csproj", "{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,10 +105,6 @@ Global
 		{5AD2254C-0B5F-4CC6-BC78-E300B4C4AFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD2254C-0B5F-4CC6-BC78-E300B4C4AFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD2254C-0B5F-4CC6-BC78-E300B4C4AFDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2055CA89-96D5-42A8-A450-83F71B389558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2055CA89-96D5-42A8-A450-83F71B389558}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2055CA89-96D5-42A8-A450-83F71B389558}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2055CA89-96D5-42A8-A450-83F71B389558}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16B4F83E-B16E-4C83-A074-B220F9B2B1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16B4F83E-B16E-4C83-A074-B220F9B2B1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16B4F83E-B16E-4C83-A074-B220F9B2B1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,6 +117,10 @@ Global
 		{A36FC698-67F6-405B-A411-01C4089807AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A36FC698-67F6-405B-A411-01C4089807AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A36FC698-67F6-405B-A411-01C4089807AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,10 +135,10 @@ Global
 		{1E6A9CA4-C39D-494A-A309-7069C0FC8A35} = {C301A5E8-1EFD-47B7-8E4D-555616CCA6E0}
 		{6A11F215-FDA7-4D1F-BAE9-8514685EE5AD} = {C301A5E8-1EFD-47B7-8E4D-555616CCA6E0}
 		{5AD2254C-0B5F-4CC6-BC78-E300B4C4AFDA} = {C301A5E8-1EFD-47B7-8E4D-555616CCA6E0}
-		{2055CA89-96D5-42A8-A450-83F71B389558} = {0684AF4A-A2F6-42C2-9ED9-CC68349A72A7}
 		{16B4F83E-B16E-4C83-A074-B220F9B2B1F0} = {83558D05-0246-41D7-8E1C-18EB78CFC71B}
 		{07E27C4C-5C13-45E1-9547-EAB2B6A56658} = {D89C8673-E127-4388-8B99-D1C2F1253BD9}
 		{A36FC698-67F6-405B-A411-01C4089807AD} = {D89C8673-E127-4388-8B99-D1C2F1253BD9}
+		{4374E5D9-BA3E-4B3B-A1BC-FFA1695648F7} = {0684AF4A-A2F6-42C2-9ED9-CC68349A72A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE8232BC-FB33-4391-B488-83B7715D75A7}

@@ -31,11 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AnalysisUK.Tinamous.Membership.Messaging, Version=1.0.0.312, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AnalysisUK.Tinamous.Membership.Messaging.1.0.0.312\lib\net472\AnalysisUK.Tinamous.Membership.Messaging.dll</HintPath>
+    <Reference Include="AnalysisUK.Tinamous.Membership.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AnalysisUK.Tinamous.Membership.Messaging.1.1.0.348\lib\netstandard2.0\AnalysisUK.Tinamous.Membership.Messaging.dll</HintPath>
     </Reference>
-    <Reference Include="AnalysisUK.Tinamous.Messaging.Common, Version=1.1.0.10, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AnalysisUK.Tinamous.Messaging.Common.1.1.0.10\lib\netstandard2.0\AnalysisUK.Tinamous.Messaging.Common.dll</HintPath>
+    <Reference Include="AnalysisUK.Tinamous.Messaging.Common, Version=1.1.0.12, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AnalysisUK.Tinamous.Messaging.Common.1.1.0.12\lib\netstandard2.0\AnalysisUK.Tinamous.Messaging.Common.dll</HintPath>
     </Reference>
     <Reference Include="EasyNetQ, Version=3.7.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyNetQ.3.7.1\lib\net46\EasyNetQ.dll</HintPath>

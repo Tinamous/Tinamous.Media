@@ -31,11 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AnalysisUK.Tinamous.Membership.Messaging, Version=1.0.0.312, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AnalysisUK.Tinamous.Membership.Messaging.1.0.0.312\lib\net472\AnalysisUK.Tinamous.Membership.Messaging.dll</HintPath>
+    <Reference Include="AnalysisUK.Tinamous.Membership.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AnalysisUK.Tinamous.Membership.Messaging.1.1.0.348\lib\netstandard2.0\AnalysisUK.Tinamous.Membership.Messaging.dll</HintPath>
     </Reference>
-    <Reference Include="AnalysisUK.Tinamous.Messaging.Common, Version=1.1.0.10, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AnalysisUK.Tinamous.Messaging.Common.1.1.0.10\lib\netstandard2.0\AnalysisUK.Tinamous.Messaging.Common.dll</HintPath>
+    <Reference Include="AnalysisUK.Tinamous.Messaging.Common, Version=1.1.0.12, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AnalysisUK.Tinamous.Messaging.Common.1.1.0.12\lib\netstandard2.0\AnalysisUK.Tinamous.Messaging.Common.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper, Version=4.0.4.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
@@ -87,6 +87,10 @@
     <ProjectReference Include="..\AnalysisUK.Tinamous.Media.BL\AnalysisUK.Tinamous.Media.BL.csproj">
       <Project>{A8F9E393-956D-40D7-B611-0B8A24B898D9}</Project>
       <Name>AnalysisUK.Tinamous.Media.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnalysisUK.Tinamous.Media.Messaging\AnalysisUK.Tinamous.Media.Messaging.csproj">
+      <Project>{4374e5d9-ba3e-4b3b-a1bc-ffa1695648f7}</Project>
+      <Name>AnalysisUK.Tinamous.Media.Messaging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
